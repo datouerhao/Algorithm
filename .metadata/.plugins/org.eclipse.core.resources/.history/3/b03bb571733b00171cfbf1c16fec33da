@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class SeqSearch {
+	public static void mian(String[] args)
+	{	
+		Scanner input= new Scanner(System.in);
+		System.out.println("输入你要查找的数据：");
+		int num=input.nextInt();//存放控制台输入语句
+		int a[]={1,4,2,99,3,44};
+		
+		int result=search(a,num);
+		if(result==-1)
+		{
+			System.out.println("查找的数据不在数组内");
+		}
+		else{
+			System.out.println("查找的数据在数组中位置为："+result);
+		}
+	}
+	public static int  search(int a[],int num)
+	{
+		for(int i=0;i<a.length;i++)
+		{
+			if(a[i]==num)
+			{
+				return i;
+			}
+			
+		}
+		return -1;
+	}
+}
