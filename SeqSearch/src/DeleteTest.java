@@ -26,7 +26,7 @@ public class DeleteTest {
 		}
 		length--;
 		for (j = 0; j < length; j++) {
-			System.out.print(a[j]);
+			System.out.print(a[j] + ",");
 		}
 	}
 }
